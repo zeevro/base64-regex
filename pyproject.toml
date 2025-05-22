@@ -11,7 +11,7 @@ authors = [{ name = "Zeev Rotshtein", email = "zeevro@gmail.com" }]
 requires-python = ">=3.10"
 
 [project.urls]
-Repository = "https://github.com/zeevro/cgeo"
+Repository = "https://github.com/zeevro/base64-regex"
 
 [tool.ruff]
 line-length = 150
