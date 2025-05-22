@@ -15,7 +15,7 @@ def _tail(buf: bytes, shift: int) -> str:
         return alphabet[buf[-1] & 0x3F]
     if m == 1:
         x = (buf[-1] & 0x03) << 4
-        return f'[{"".join(alphabet[x | n] for n in range(0x10))}]?'
+        return f'[{"".join(alphabet[x | n] for n in range(0x10))}]'
     x = (buf[-1] & 0x0F) << 2
     return f'[{"".join(alphabet[x | n] for n in range(0x04))}]'
 
